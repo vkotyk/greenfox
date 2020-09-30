@@ -27,4 +27,19 @@
 /*
  * Your code goes into this function
  */
-export function draw(c) {}
+export function draw(c) {
+  let i = 0;
+  i++;
+  i = i + 1;
+  i += 1;
+
+  i--;
+  i = i - 1;
+  i -= 1;
+
+  i = i + 10;
+  i += 10;
+
+  i = i - 10;
+  i -= 10;
+}
