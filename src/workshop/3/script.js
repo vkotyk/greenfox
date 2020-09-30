@@ -42,4 +42,35 @@
 /*
  * Your code goes into this function
  */
-export function draw(c) {}
+
+//DOKONČIT
+export function draw(c) {
+  let left = 20;
+  let top = 140;
+  let size = 100;
+
+  c.strokeStyle = "red";
+  c.fillStyle = "rgba(0,0,0, " + 0 * 0.2 + ")";
+  c.fillRect(left + (0 * size) / 2, top + (0 * size) / 2, size, size);
+  c.strokeRect(left + (0 * size) / 2, top + (0 * size) / 2, size, size);
+
+  c.strokeStyle = "red";
+  c.fillStyle = "rgba(0,0,0, " + 1 * 0.2 + ")";
+  c.fillRect(left + (1 * size) / 2, top + (1 * size) / 2, size, size);
+  c.strokeRect(left + (1 * size) / 2, top + (1 * size) / 2, size, size);
+
+  c.strokeStyle = "red";
+  c.fillStyle = "rgba(0,0,0, " + 2 * 0.2 + ")";
+  c.fillRect(left + (2 * size) / 2, top + (2 * size) / 2, size, size);
+  c.strokeRect(left + (2 * size) / 2, top + (2 * size) / 2, size, size);
+
+  c.strokeStyle = "red";
+  c.fillStyle = "rgba(0,0,0, " + 3 * 0.2 + ")";
+  c.fillRect(left + (3 * size) / 2, top + (3 * size) / 2, size, size);
+  c.strokeRect(left + (3 * size) / 2, top + (3 * size) / 2, size, size);
+
+  c.strokeStyle = "red";
+  c.fillStyle = "rgba(0,0,0, " + 4 * 0.2 + ")";
+  c.fillRect(left + (4 * size) / 2, top + (4 * size) / 2, size, size);
+  c.strokeRect(left + (4 * size) / 2, top + (4 * size) / 2, size, size);
+}

@@ -25,4 +25,10 @@
 /*
  * Your code goes into this function
  */
-export function draw(c) {}
+export function draw(c) {
+  let number1 = 11 % 3;
+  let number2 = 9 % 2;
+  let i = 3;
+  if (i % 2 === 0) {
+  }
+}

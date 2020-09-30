@@ -27,6 +27,8 @@
 /*
  * Your code goes into this function
  */
+
+/// DOKONČIT
 export function draw(c) {
   let i = 0;
   i++;
