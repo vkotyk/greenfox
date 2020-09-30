@@ -1,0 +1,48 @@
+import { draw } from "../script";
+
+(function () {
+  let canvas = document.getElementById("canvas");
+  let context = canvas.getContext("2d");
+
+  // resize the canvas to fill browser window dynamically
+  window.addEventListener("resize", resizeCanvas, false);
+
+  function resizeCanvas() {
+    // Make it visually fill the positioned parent
+    canvas.style.width = "100%";
+    canvas.style.height = "100%";
+    // ...then set the internal size to match
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    drawExcercise(context, canvas.width, canvas.height);
+    /*
+     * Your drawings need to be inside this function otherwise they will be reset when
+     * you resize the browser window and the canvas goes will be cleared.
+     * This function is defined in script.js
+     */
+    draw(context);
+    localStorage.setItem("canvas8", canvas.toDataURL());
+  }
+
+  resizeCanvas();
+})();
+
+function drawExcercise(c, width, height) {
+  let left = width - 60;
+  let top = height - 100;
+
+  function drawTriangle(left, top, size) {
+    c.beginPath();
+    c.moveTo(left, top);
+    c.lineTo(left + size / 2, top + size);
+    c.lineTo(left - size / 2, top + size);
+    c.lineTo(left, top);
+    c.stroke();
+  }
+
+  drawTriangle(left, top, 80);
+
+  c.fillStyle = "black";
+  c.strokeStyle = "black";
+}
